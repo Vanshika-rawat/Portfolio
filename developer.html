@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Showcase</title>
+    <link rel="stylesheet" href="design.css">
+</head>
+<body>
+    <div class="horizontal-scroll">
+        <div class="page page-1">
+            <div class="page-container">
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/yourvideo1" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <h1>Page 1</h1>
+            <p>Content for page 1</p>
+            <button class="next-button">Next</button>
+            </div>
+            <div class="project-description">
+                <h2>Project 1</h2>
+                <p>Description of Project 1 goes here.</p>
+            </div>
+        </div>
+        <div class="page page-2">
+            <div class="page-container">
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/yourvideo1" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <h1>Page 2</h1>
+            <p>Content for page 2</p>
+            <button class="next-button">Next</button>
+            </div>
+            
+            <div class="project-description">
+                <h2>Project 1</h2>
+                <p>Description of Project 1 goes here.</p>
+            </div>
+        </div>
+        <!-- Add more pages as needed -->
+    </div>
+    <script>
+    document.querySelectorAll('.next-button').forEach((button) => {
+        button.addEventListener('click', () => {
+            const currentPage = button.parentElement.parentElement;
+            const nextPage = currentPage.nextElementSibling;
+
+            if (nextPage) {
+                nextPage.scrollIntoView({ behavior: 'smooth' });
+            }
+        });
+    });
+    </script>
+</body>
+</html>

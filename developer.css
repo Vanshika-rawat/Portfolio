@@ -1,0 +1,87 @@
+/* General styling */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.horizontal-scroll {
+    display: flex;
+    flex-direction: row;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+
+.page {
+    flex: 0 0 100%; /* Force pages to take full width */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.page-container {
+    max-width: 800px; /* Adjust as needed */
+    margin: 0 auto;
+}
+
+/* Video container */
+.video-container {
+    width: 100%;
+    height: 400px; /* Adjust height as needed */
+    background-color: #f0f0f0;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    overflow: hidden; /* Ensure video doesn't overflow */
+}
+
+.video-container iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+/* Project description */
+.project-description {
+    text-align: center;
+}
+
+.project-description h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.project-description p {
+    font-size: 16px;
+    color: #666;
+}
+
+h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+button.next-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button.next-button:hover {
+    background-color: #0056b3;
+}
+
+/* Hide scrollbar */
+.horizontal-scroll::-webkit-scrollbar {
+    display: none;
+}
