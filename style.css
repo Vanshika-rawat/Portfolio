@@ -22,38 +22,30 @@ header:hover {
     background-position: center;
 }
 
-.hero {
+
+ .hero {
     width: 100%;
     height: 100vh;
     overflow: hidden;
-    display: flex; /* Added */
-}
-
-.hero .left {
-    flex: 1; /* Added */
-    display: flex; /* Added */
-    justify-content: center; /* Added */
-    align-items: center; /* Added */
+    
 }
 
 .hero .left img {
-    max-width: 100%; /* Modified */
-    max-height: 100%; /* Added */
+    height: auto;
+    width: 100%;
     opacity: 0.5;
 }
 
 .hero .right {
-    flex: 1; /* Added */
-    display: flex; /* Added */
-    flex-direction: column; /* Added */
-    justify-content: center; /* Added */
-    align-items: center; /* Added */
-    text-align: center; /* Added */
-    color: white; /* Moved */
+    margin-top: -7rem;
+    position: absolute;
+    right: 0;
+    margin-right:60rem;
 }
 
 .hero .right h6 {
     font-size: 1.6rem;
+    color: white;
     margin-bottom: 0.5rem;
 }
 
